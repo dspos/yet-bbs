@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://118.195.176.154:3306/forum?useSSL=false&serverTimezone=UTC
+    username: root
+    password: yt123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 118.195.176.154
+    port: 6379
+    password: yt123456
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
